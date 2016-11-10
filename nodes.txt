@@ -1,0 +1,8 @@
+Primary Node
+sudo geth --nodiscover --maxpeers 3 --datadir "/node1" --identity "Test1" --networkid 120491 --fast --rpc --rpcport "8080" --port "30304" console
+
+Secondary Node
+sudo geth --nodiscover --maxpeers 3 --datadir "/node2" --fast --identity "Test2" --networkid 120491 console
+
+VM Node
+sudo geth --nodiscover --maxpeer 3 --datadir “/node3” --fast --identity “VM1” --networkid 120491 console 
